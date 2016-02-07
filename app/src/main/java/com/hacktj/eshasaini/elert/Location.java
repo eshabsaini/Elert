@@ -13,6 +13,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class Location extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+//  private GoogleApiClient mGoogleApiClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
