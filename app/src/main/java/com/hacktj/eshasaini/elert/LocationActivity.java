@@ -30,6 +30,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
 import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.model.LatLng;
+
 import android.support.v4.content.ContextCompat;
 import android.Manifest;
 
@@ -139,5 +141,13 @@ public class LocationActivity extends AppCompatActivity implements
         // attempt to re-establish the connection.
         Log.i(TAG, "Connection suspended");
         mGoogleApiClient.connect();
+    }
+
+
+    @Override
+    public void onMapReady(GoogleMap googleMap){
+        mMap = googleMap;
+
+        LatLng myLocation = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
     }
 }
