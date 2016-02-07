@@ -144,10 +144,4 @@ public class LocationActivity extends AppCompatActivity implements
     }
 
 
-    @Override
-    public void onMapReady(GoogleMap googleMap){
-        mMap = googleMap;
-
-        LatLng myLocation = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
-    }
 }
