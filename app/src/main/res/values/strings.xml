@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright 2014 Google, Inc
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,5 +23,6 @@
     </string>
     <string name="app_name">Elert</string>
     <string name="title_activity_location">Map</string>
+    <string name="title_activity_second">SecondActivity</string>
 </resources>
 
